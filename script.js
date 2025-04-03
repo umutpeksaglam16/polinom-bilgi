@@ -73,14 +73,7 @@ function searchInfo() {
 function toggleTheme() {
     document.body.classList.toggle("dark-mode");
 }
-function addNewInfo() {
-    let newInfo = document.getElementById("newInfo").value;
-    if (newInfo) {
-        data["polinom özellikleri"].push(newInfo);
-        alert("Bilgi eklendi!");
-        document.getElementById("newInfo").value = "";
-    }
-}
+
 function drawGraph() {
     let ctx = document.getElementById("polynomialGraph").getContext("2d");
 
